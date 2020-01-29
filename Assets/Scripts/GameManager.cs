@@ -20,4 +20,12 @@ public class GameManager : MonoBehaviour
             Debug.LogError("I tried to create a second Game Manager.");
         }
     }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+    }
 }

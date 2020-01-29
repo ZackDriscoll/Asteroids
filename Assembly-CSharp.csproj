@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\Player.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/zacdrisc/Desktop/Game Programs 104/Asteroids/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
@@ -83,12 +84,6 @@
     </Reference>
     <Reference Include="Unity.Rider.Editor">
       <HintPath>C:/Users/zacdrisc/Desktop/Game Programs 104/Asteroids/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>C:/Users/zacdrisc/Desktop/Game Programs 104/Asteroids/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Tilemap.Editor">
-      <HintPath>C:/Users/zacdrisc/Desktop/Game Programs 104/Asteroids/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>C:/Users/zacdrisc/Desktop/Game Programs 104/Asteroids/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
