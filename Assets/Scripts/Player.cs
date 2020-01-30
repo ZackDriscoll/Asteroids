@@ -25,6 +25,11 @@ public class Player : MonoBehaviour
             tf.position += tf.right * movementSpeed * Time.deltaTime;
         }
 
+        if (Input.GetKey(KeyCode.DownArrow))
+        {
+            tf.position -= tf.right * movementSpeed * Time.deltaTime;
+        }
+
         if (Input.GetKey(KeyCode.LeftArrow))
         {
             tf.Rotate(0, 0, rotationSpeed * Time.deltaTime);
