@@ -5,7 +5,9 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public GameObject playerPrefab;
+    public GameObject starShipPrefab;
     public GameObject player;
+    public GameObject enemy;
     public static GameManager instance;
     public int lives = 3;
     public int score = 0;
