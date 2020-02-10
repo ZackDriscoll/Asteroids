@@ -51,6 +51,11 @@ public class Player : MonoBehaviour
         throw new NotImplementedException();
     }
 
+    void OnCollisionEnter2D(Collision2D otherObject)
+    {
+        throw new NotImplementedException();
+    }
+
     void OnDestroy()
     {
         //If the player dies, they lose a life.

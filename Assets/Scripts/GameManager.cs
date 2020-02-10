@@ -5,13 +5,15 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public GameObject playerPrefab;
-    public GameObject starShipPrefab;
+    public GameObject enemyPrefab;
+    public GameObject asteroidPrefab;
     public GameObject player;
-    public GameObject enemy;
+
     public static GameManager instance;
     public int lives = 3;
     public int score = 0;
     public bool isPaused = false;
+    public List<GameObject> enemiesList = new List<GameObject>();
 
     public void Awake()
     {
@@ -36,6 +38,6 @@ public class GameManager : MonoBehaviour
 
     public void Respawn()
     {
-        Instantiate(playerPrefab);
+        player = Instantiate(playerPrefab);
     }
 }
