@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     public int score = 0;
     public bool isPaused = false;
     public List<GameObject> enemiesList = new List<GameObject>();
+    public GameObject[] enemyPrefabs;
 
     public void Awake()
     {

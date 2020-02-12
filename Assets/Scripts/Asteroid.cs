@@ -8,12 +8,13 @@ public class Asteroid : MonoBehaviour
     void Start()
     {
         GameManager.instance.enemiesList.Add(this.gameObject);
+        //Aim at the player at start
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        //Always move forward
     }
 
     void OnCollisionEnter2D(Collision2D otherObject)
