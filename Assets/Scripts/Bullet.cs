@@ -19,4 +19,13 @@ public class Bullet : MonoBehaviour
         //Always move forward
         tf.position += tf.up * bulletSpeed * Time.deltaTime;
     }
+
+    void OnTriggerEnter2D (Collider2D otherObject)
+    {
+        if (otherObject.gameObject == GameManager.instance.asteroidPrefab)
+        {
+            Destroy(otherObject.gameObject);
+            Destroy(this.gameObject);
+        }
+    }
 }

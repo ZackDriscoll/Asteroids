@@ -34,6 +34,19 @@ public class Enemies : MonoBehaviour
         }
     }
 
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Bullet")
+        {
+            Destroy(this.gameObject);
+        }
+
+        if (collision.tag == "Enemy")
+        {
+            Destroy(this.gameObject);
+        }
+    }
+
     void OnDestroy()
     {
         GameManager.instance.enemiesList.Remove(this.gameObject);

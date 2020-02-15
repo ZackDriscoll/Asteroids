@@ -59,6 +59,14 @@ public class Player : MonoBehaviour
         Destroy(this.gameObject);
     }
 
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Enemy")
+        {
+            Destroy(this.gameObject);
+        }
+    }
+
     void OnDestroy()
     {
         //If the player dies, they lose a life.
